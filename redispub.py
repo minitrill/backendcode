@@ -8,6 +8,7 @@
 
 """
 该模块是订阅redis中的key过期事件，当meta层中的key过期后，将data层将数据回写mysql
+直接python redispub.py运行，参考supervisord.d里的配置文件由supervisor来监控
 TODO 考虑redis异常的情况，数据持久化
 """
 import sys
